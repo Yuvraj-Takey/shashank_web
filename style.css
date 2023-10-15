@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Replace with your image file path */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-container {
+    background-color: #dcdcdc7b;
+    height: 80px;
+    width: 100%;
+    font-size:large;
+    position: relative; /* Initial position is relative */
+    transition: position 0.3s ease; /* Transition for smooth change in position */
+     /* padding: 10px 0; */
+        /* width: 100%; */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+    text-align: center;
+    z-index: 1000; /* Ensure the nav is on top of other elements */
+    top: 0;
+}
+
+.sticky {
+    position: fixed; /* Position becomes fixed on scroll */
+    top: 0;
+}
+
+.nav-container a {
+    /* color: white; */
+    color: rgb(99, 68, 21);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* nav hidden */
+.nav-hidden{
+height: 80px;
+}
+
+
+.container {
+    background-image: url('repo/lightpic/ShankBox-09.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-self: flex-start;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 100vh;
+}
+
+.main-head-h1 {
+    font-family: 'Rock Salt', cursive;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-size: 3rem;
+    /* background-color: rgba(240, 248, 255, 0.629); */
+    color: aliceblue;
+    align-items: flex-end;
+}
+
+
+/* achievement section css */
+.achievement-header{
+    padding-top: 50px !important;
+}
+.achievement-gallery{
+    /* background-image: url("./assets/grey-bg-achievements.png"); */
+    width: 100vw;
+    height: 330px;
+}
+.achievement-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.achievement-item p {
+    /* font-weight: 600; */
+    /* font-style: italic; */
+    font-size: larger;
+}
+.achievement-item img{
+    transition: all 0.2s ease-in;
+}
+.achievement-item:hover img{
+    transform: translate(-15px,-20px) scale(1.2) rotate(5deg);
+
+}
+
+.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-gallery img {
+    align-self: center;
+    width: 19%;
+    height: 150px;
+    margin: 5px;
+    object-fit: cover;
+    /* border: 2px solid #333; */
+    /* Example border style */
+    /* border-radius: 10px; */
+    /* Example border radius */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+    transition: all 0.3s ease;
+    /* Example box shadow */
+}
+
+.img-gallery img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* utilities */
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid red; */
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.m-w-80 {
+    width: 80vw;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+.flex-sp-around{
+    justify-content: space-around;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-20 {
+    gap: 40px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+.spacer-bw-sections{
+    width: 100vw;
+    height: 80px;
+}
+.display-none{
+    display: none;
+}
+.nav-active-accent{
+    color: red !important
+}
+.f-larger{
+    font-size: 2rem !important;
+    /* font-size: monon; */
+}
+.bg-offwhite{
+    background: #f0f0f0;
+}
+.w-100{
+    width: 100vw;
+    text-align: center;
+}
